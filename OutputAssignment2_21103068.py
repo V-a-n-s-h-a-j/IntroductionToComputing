@@ -10,12 +10,12 @@ Pythonisacasesensitivelanguage
  
 
 Enter name: vanshaj
-Enter SID: 2100
+Enter SID: 21103068
 Enter Department Name: cse
 Enter CGPA: 9.9
 Hey, vanshaj Here!
-My SID is 2100
-I am from cse department and my CGPA is 9.900000 
+My SID is 21103068
+I am from cse department and my CGPA is 9.9
 
 
 Bit wise AND operator gives:  8 
