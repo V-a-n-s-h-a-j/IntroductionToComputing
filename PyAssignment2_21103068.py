@@ -97,11 +97,11 @@ else:
 
 
 #6
-len1=input("Enter length: ")
-len2=input("Enter length: ")
-len3=input("Enter length: ")
+len1=int(input("Enter length: "))
+len2=int(input("Enter length: "))
+len3=int(input("Enter length: "))
 if(len1>=len2+len3 or len2>=len3+len1 or len3>=len1+len2):
-#checks the basic triangle forming condition i.e. length of any one side shouldnt be greater than the sum of lengths of the other two sides 
     print("Triangle cannot be formed")
 else: 
     print("Triangle can be formed")
+# The if statement checks the whether any one side of the triangle is greater than the sum of the other two or not
