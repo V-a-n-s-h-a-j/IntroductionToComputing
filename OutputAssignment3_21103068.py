@@ -36,19 +36,19 @@ ABCDEFGHIJK
 
 
 6)
-Enter SID: 21103068
+Enter a unique SID: 21103068
 Enter name: Vanshaj
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done y
-Enter SID: 21103001
+Enter a unique SID: 21103001
 Enter name: John
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done y
-Enter SID: 21103001
+Enter a unique SID: 21103001
 Enter name: David
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done y
-Enter SID: 21103002
+Enter a unique SID: 21103002
 Enter name: Michael
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done n
