@@ -41,27 +41,28 @@ Enter name: Vanshaj
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done y
 Enter a unique SID: 21103001
-Enter name: John
-Enter 'Y' if you want to continue inputting names and SIDs 
-Enter 'N' if you're done y
-Enter a unique SID: 21103001
 Enter name: David
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done y
 Enter a unique SID: 21103002
-Enter name: Michael
+Enter name: Kakashi
+Enter 'Y' if you want to continue inputting names and SIDs 
+Enter 'N' if you're done y
+Enter a unique SID: 21103003
+Enter name: Sasuke
 Enter 'Y' if you want to continue inputting names and SIDs 
 Enter 'N' if you're done n
 6a)
-{21103068: 'Vanshaj', 21103001: 'David', 21103002: 'Michael'}
+{21103068: 'Vanshaj', 21103001: 'David', 21103002: 'Kakashi', 21103003: 'Sasuke'}
 6b)
 David 21103001
-John 21103001
-Michael 21103002
+Kakashi 21103002
+Sasuke 21103003
 Vanshaj 21103068
 6c)
 21103001 David
-21103002 Michael
+21103002 Kakashi
+21103003 Sasuke
 21103068 Vanshaj
 6d)
 Enter the SID: 21103068
