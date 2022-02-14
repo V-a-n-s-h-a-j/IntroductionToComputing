@@ -162,7 +162,7 @@ cred_Name=dict() #creates another empty dictionary
 
 while True:
     
-    sid=int(input("Enter SID: "))
+    sid=int(input("Enter a unique SID: "))
     name=str(input("Enter name: "))
     cred_SID[sid]=name #enters names of students in cred_SID with sid as the key
     cred_Name[name]=sid #enters sid of students in cred_Name with name as the key
