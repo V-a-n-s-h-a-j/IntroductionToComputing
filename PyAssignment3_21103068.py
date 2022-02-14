@@ -1,6 +1,7 @@
 #Q1
 print("1)")
 string=input("Enter a string: ")
+string.lower() #Makes the whole string in lower case
 occ={} #Empty dictionary
 if " " in string:
     words=string.split(" ") #Splits the words in the string into a list
