@@ -1,10 +1,10 @@
 Q1
 Move disk 1 from rod A to rod C
-Move from  A  to  B
+Move disk 2 from rod A to rod B
 Move disk 1 from rod C to rod B
-Move from  A  to  C
+Move disk 3 from rod A to rod C
 Move disk 1 from rod B to rod A
-Move from  B  to  C
+Move disk 2 from rod B to rod C
 Move disk 1 from rod A to rod C
 
 Q2
@@ -27,30 +27,21 @@ Iteration:
 1 4 6 4 1
 
 Q3
-Enter the 1st number: 5
-Enter the 2nd number: 2
-Quotient:  2
-Remainder:  1
-(2, 1)
+Enter value of a and b: 5 2
+(Quotient, Remainder): (2, 1)
+
 3a)
-The function is callable:  True
-
+Function is callable: False
 3b)
-Everything is non-zero
-
-3c
-[2, 1, 4, 5, 6]
-Numbers greater than 4 are:  [5, 6]
-
-3d
-{5, 6}
-
+Values entered are non-zero: Yes
+3c)
+After addition: (2, 1, 4, 5, 6) and after filtering: (2, 1, 4)
+3d)
+{1, 2, 4}
 3e)
-frozenset({5, 6})  is now an immutable set
-
+frozenset({1, 2, 4})
 3f)
-The maximum value in the set is:  6
-The hash value is:  6
+Max value is:  4 and its Hash value is: 4
 
 Q4
 Name:  vanshaj
