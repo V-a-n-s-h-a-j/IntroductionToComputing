@@ -44,8 +44,11 @@ frozenset({1, 2, 4})
 Max value is:  4 and its Hash value is: 4
 
 Q4
-Name:  vanshaj
+Enter name of the student: Vanshaj
+Enter SID of the student: 3068
+Name:  Vanshaj
 SID:  3068
+The object has been destroyed.
 
 Q5
 5a)
@@ -58,4 +61,3 @@ Enter a word: vanshaj
 Enter another word: anshvaj
 The possible words are:  ['vanshaj', 'avnshaj', 'anvshaj', 'ansvhaj', 'anshvaj', 'anshavj', 'anshajv']
 The friendship is real
-The object is destroyed
