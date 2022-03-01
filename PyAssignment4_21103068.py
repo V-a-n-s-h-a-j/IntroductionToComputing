@@ -5,7 +5,7 @@ def Towerofhanoi(n,initial,extra,final):
         print ("Move disk 1 from rod",initial,"to rod",final)
         return
     Towerofhanoi(n-1,initial,final,extra)
-    print("Move from ",initial," to ",final)
+    print("Move disk",n, "from rod",initial,"to rod",final)
     Towerofhanoi(n-1,extra,initial,final)
         
 Towerofhanoi(3,"A","B","C") #3 disks are used as given in the problem  
@@ -60,82 +60,64 @@ while i<n:
     print('')
     i+=1
     print()
-    
-#Q3
-print("Q3")
-def div(a,b): #Function to calculate quotient and remainder
-    quo=a//b #Finds quotient
-    rem=a%b #Finds remainder
-    print("Quotient: ",quo)
-    print("Remainder: ",rem)
-    return quo,rem
 
-a=int(input("Enter the 1st number: "))
-b=int(input("Enter the 2nd number: "))
-result=div(a,b) #calling of the above function
-print(result)
+#Question 3
+print('Q3')
+while True:
+    a,b=map(int,input('Enter value of a and b: ').split())
+    if b==0:
+        print('Division by zero is not defined!')
+    else:
+        break
 
+print('(Quotient, Remainder):', divmod(a,b)) #built-in divmod function returns a tuple (a//b,a%b), i.e. quotient and remainder
+print()
 print("3a)")
-print("The function is callable: ",callable(div)) #callable() checks whether the function is callable or not
-print()
-
+print('Function is callable:',callable(divmod(a,b))) #callable() returns True or False for the function 
 print("3b)")
-if a==0:
-    print("a is zero")
-if b==0:
-    print("b is zero")
-if result[0]==0:
-    print("quotient is zero")
-if result[1]==0:
-    print("remainder is zero")
-if a!=0 and b!=0 and result[0]!=0 and result[1]!=0: #The statement is true only when none of the parameters are zero
-    print("Everything is non-zero")
-print()
-
-print("3c")
-list_result=list(result) #list_result is a new list made from a tuple
-add_val=[4,5,6] #given
-newSet=list_result+add_val #addition of 2 lists
-print(newSet)
-
-extra=[] #empty list
-for i in newSet: 
-    if i>4:
-        extra.append(i) #adds the i to extra-the list
-print("Numbers greater than 4 are: ",extra)
-print()
-
-print("3d")
-extraSet=set(extra) #new set made from a list
-print(extraSet)
-print()
-
+print('Values entered are non-zero:', end=' ')
+if max(divmod(a,b))==0: 
+    print('No')
+else:
+    print('Yes')
+print("3c)")
+print('After addition:',end=' ')
+lst=list(divmod(a,b)) #converts tuple into a list
+lst=lst+[4,5,6]
+tup=tuple(lst) #converts the list back into a tuple
+print(tup, end=' ')
+print('and after filtering:',end=' ')
+new_lst=[] #empty list
+for i in lst:
+    if i<=4:
+        new_lst+=[i] 
+new_tup=tuple(new_lst) #new tuple from list with values <=4 using built-in tuple function
+print(new_tup)
+print("3d)")
+print(set(new_tup)) #converts into set
 print("3e)")
-immSet=frozenset(extraSet) #new immutable frozen set made from an existing set
-print(immSet," is now an immutable set")
-print()
-
+print(frozenset(set(new_tup))) #converts into immutable set
 print("3f)")
-max=0 #a helping parameter
-for i in immSet:
-    if i>max:
-        max=i
-print("The maximum value in the set is: ",max)
-print("The hash value is: ",hash(max)) #gets the hash value of the maximum values
+print("Max value is: ",max(frozenset(set(new_tup))), 'and its Hash value is:',hash(max(frozenset(set(new_tup))))) #max() gives the max value and hash() gives the hash value
 print()
 
 #Q4
 print("Q4")
 class Student:
-    def __init__(self,name,sid): #constructor
-        self.name=name #records name
-        self.sid=sid #records sid
-    def __del__(self): #destructor
-        print("The object is destroyed")
+    def __init__(self,name,sid):
+        self.name=name
+        self.sid=sid
+    def show(self):
+        print("Name: ",self.name)
+        print("SID: ",self.sid)
+    def __del__(self):
+        print("The object has been destroyed.")
 
-S1=Student("vanshaj",3068) #new object S1
-print("Name: ",S1.name)
-print("SID: ",S1.sid)
+name=input("Enter name of the student: ")
+sid=int(input("Enter SID of the student: "))
+stud1=Student(name,sid)
+stud1.show()
+del stud1
 print()
 
 #Q5
